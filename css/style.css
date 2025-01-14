@@ -15,12 +15,16 @@ body {
     text-decoration: none;
 }
 
-nav .web, footer .web {
+nav .web {
     color: #2e2f42;
 }
 
 nav ul li {
     text-decoration: none;
+    list-style-type: none;
+}
+
+nav ul li a {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -28,11 +32,11 @@ nav ul li {
     color: #2e2f42;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     color: #404bbf;
 }
 
-nav ul li:focus {
+nav ul li a:focus {
     color: #404bbf;
 }
 
@@ -171,6 +175,7 @@ address ul li {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    text-transform: capitalize
 }
 
 .forth-section ul li {
@@ -199,6 +204,10 @@ address ul li {
 
 footer {
     background: #2e2f42;
+}
+
+footer .web {
+    color: #f4f4fd;
 }
 
 footer p {
