@@ -12,18 +12,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oi&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
+    <header class="header">
+        <div class="container header-display">
+            <nav class="nav">
                 <a href="./index.html" class="logo">Web<span class="web">Studio</span></a>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="./index.html" class="content-nav">Studio</a></li>
                     <li><a href="" class="content-nav">Portfolio</a></li>
                     <li><a href="" class="content-nav">Contacts</a></li>
                 </ul>
             </nav>
             <address class="contact-info">
-                <ul>
+                <ul class="address-menu">
                     <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
                     <li><a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a></li>
                 </ul>
@@ -32,29 +32,29 @@
     </header>
     <main>
         <section class="first-section">
-            <div class="container-first">
+            <div class="container container-first">
                 <h1 class="first-title">Effective Solutions for Your Business</h1>
                 <button type="button" class="main-button">Order Service</button>
             </div>
         </section>
         <section class="second-section">
-        <div class="container-second">
-            <h2 hidden>/</h2>
-                <ul>
-                    <li>
+        <div class="container container-second">
+            <h2 class="visually-hidden">/</h2>
+                <ul class="strategy-menu">
+                    <li class="strategy-item">
                         <h3 class="strategy-name">Strategy</h3>
                         <p class="describtion">Our goal is to identify the business
                         problem to walk away with the perfect and creative solution.</p>
                     </li>
-                    <li>
+                    <li class="strategy-item">
                         <h3 class="strategy-name">Punctuality</h3>
                         <p class="describtion">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                     </li>
-                    <li>
+                    <li class="strategy-item">
                         <h3 class="strategy-name">Diligence</h3>
                         <p class="describtion">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                     </li>
-                    <li>
+                    <li class="strategy-item">
                         <h3 class="strategy-name">Technologies</h3>
                         <p class="describtion">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li>
@@ -62,72 +62,92 @@
             </div>
         </section>
         <section class="third-section">
-            <div class="container-third">
+            <div class="container container-third">
                 <h2 class="third-title">Our Team</h2>
-                <ul>
+                <ul class="worker-menu">
                     <li class="worker-list">
                         <img src="./images/img.jpg" alt="Mark Guerrero" width="264" height="260">
-                        <h3 class="worker-list-title">Mark Guerrero</h3>
-                        <p class="worker-list-p">Product Designer</p>
+                        <div class="worker-info">
+                            <h3 class="worker-list-title">Mark Guerrero</h3>
+                            <p class="worker-list-p">Product Designer</p>
+                        </div>
                     </li>
                     <li class="worker-list">
                         <img src="./images/img(1).jpg" alt="Tom Ford" width="264" height="260">
-                        <h3 class="worker-list-title">Tom Ford</h3>
-                        <p class="worker-list-p">Frontend Developer</p>
+                        <div class="worker-info">
+                            <h3 class="worker-list-title">Tom Ford</h3>
+                            <p class="worker-list-p">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="worker-list">
                         <img src="./images/img(2).jpg" alt="Camila Garcia" width="264" height="260">
-                        <h3 class="worker-list-title">Camila Garcia</h3>
-                        <p class="worker-list-p">Marketing</p>
+                        <div class="worker-info">
+                            <h3 class="worker-list-title">Camila Garcia</h3>
+                            <p class="worker-list-p">Marketing</p>
+                        </div>
                     </li>
                     <li class="worker-list">
                         <img src="./images/img(3).jpg" alt="Daniel Wilson" width="264" height="260">
-                        <h3 class="worker-list-title">Daniel Wilson</h3>
-                        <p class="worker-list-p">UI Designer</p>
+                        <div class="worker-info">
+                            <h3 class="worker-list-title">Daniel Wilson</h3>
+                            <p class="worker-list-p">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="forth-section">
-            <div class="container-forth">
+            <div class="container container-forth">
                 <h2 class="forth-title">Our Portfolio</h2>
-                <ul>
-                    <li>
+                <ul class="app-menu">
+                    <li class="app-list">
                         <img src="./images/image.jpg" alt="Banking App" width="360">
-                        <h3 class="app-title">Banking App</h3>
-                        <p class="app-p">App</p>
+                        <div class="app-info">
+                            <h3 class="app-title">Banking App</h3>
+                            <p class="app-p">App</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="app-list">
                         <img src="./images/image1.jpg" alt="Cashless Payment" width="360">
-                        <h3 class="app-title">Cashless Payment</h3>
-                        <p class="app-p">Marketing</p>
+                        <div class="app-info">
+                            <h3 class="app-title">Cashless Payment</h3>
+                            <p class="app-p">Marketing</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="app-list">
                         <img src="./images/image2.jpg" alt="Meditation App" width="360">
-                        <h3 class="app-title">Meditation App</h3>
-                        <p class="app-p">App</p>
+                        <div class="app-info">
+                            <h3 class="app-title">Meditation App</h3>
+                            <p class="app-p">App</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="app-list">
                         <img src="./images/image3.jpg" alt="Taxi Service" width="360">
-                        <h3 class="app-title">Taxi Service</h3>
-                        <p class="app-p">Marketing</p>
+                        <div class="app-info">
+                            <h3 class="app-title">Taxi Service</h3>
+                            <p class="app-p">Marketing</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="app-list">
                         <img src="./images/image4.jpg" alt="Screen Illustrations" width="360">
-                        <h3 class="app-title">Screen Illustrations</h3>
-                        <p class="app-p">Design</p>
+                        <div class="app-info">
+                            <h3 class="app-title">Screen Illustrations</h3>
+                            <p class="app-p">Design</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="app-list">
                         <img src="./images/image5.jpg" alt="Online Courses" width="360">
-                        <h3 class="app-title">Online Courses</h3>
-                        <p class="app-p">Marketing</p>
+                        <div class="app-info">
+                            <h3 class="app-title">Online Courses</h3>
+                            <p class="app-p">Marketing</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>  
     <footer class="footer">
-        <div class="container-footer">
+        <div class="container container-footer">
             <a href="./index.html" class="logo logo-footer">Web<span class="web">Studio</span></a>
             <p class="footer-p">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
