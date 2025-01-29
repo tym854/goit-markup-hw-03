@@ -287,6 +287,10 @@ address ul li {
     justify-content: center;
 }
 
+.media-icon {
+    fill: #4d5ae5;
+}
+
 .third-section h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
