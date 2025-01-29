@@ -47,6 +47,9 @@ nav ul li a {
 
 header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-display {
@@ -105,28 +108,23 @@ nav ul li a {
 
 .current {
     position: relative;
+    color: #404BBF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current:hover::after {
+.current::after {
     position: absolute;
     content: '';
     height: 4px;
     width: 100%;
-    background-color: #404BBF;
+    background-color: #404bbf;
     left: 0;
     border-radius: 2px;
-    bottom: 0;
+    bottom: -1px;
 }
 
-.current:focus::after {
-    position: absolute;
-    content: "";
-    height: 4px;
-    width: 100%;
-    background-color: #404BBF;
-    left: 0;
-    border-radius: 2px;
-    bottom: 0;
+address .contact {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 nav ul li a:hover {
@@ -172,7 +170,7 @@ address ul li {
 .first-section {
     padding: 188px 0;
     background: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image.jpg);
     background-repeat: no-repeat;
     max-width: 1440px;
     background-size: cover;
@@ -212,6 +210,7 @@ address ul li {
     min-width: 169px;
     height: 56px;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .first-section button:hover {
@@ -227,6 +226,17 @@ address ul li {
 }
 
 .strategy-name {
+    margin-bottom: 8px;
+}
+
+.second-section .svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
     margin-bottom: 8px;
 }
 
@@ -287,8 +297,27 @@ address ul li {
     justify-content: center;
 }
 
+.medias {
+    width: 40px;
+    height: 40px;
+}
+
+.medias a {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medias a:hover, .medias a:focus {
+    background-color: #404bbf;
+}
+
 .media-icon {
-    fill: #4d5ae5;
+    fill: #f4f4fd;
 }
 
 .third-section h2 {
@@ -376,25 +405,16 @@ address ul li {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 40px 32px 164px;
+    padding: 40px 32px ;
     transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .app-list {
     background-color: #fff;
     list-style-type: none;
     width: calc((100% - 48px) / 3);;
-    box-shadow: none;
-}
-
-.app-list:hover, .app-list:focus {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.app-list:hover .cover-content, .app-list:focus .cover-content {
-    transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .forth-section .app-info {
