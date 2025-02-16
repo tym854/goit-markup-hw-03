@@ -209,5 +209,42 @@
             </div>
         </div>
     </footer>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-holder">
+                <button class="modal-button">
+                    <svg width="8" height="8">
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <p class="modal-heading">Leave your contacts and we will call you back</p>
+                <form>
+                    <lable for="user-name" class="field-lable">Name<lable>
+                    <div class="modal-icon-placeholder">
+                    <input type="name" class="input-field" id="user-name" name="user-name" required>
+                    <svg width="12" height="12" class="modal-icon">
+                        <use href="./images/icons.svg#icon-user"></use>
+                    </svg>
+                    </div>
+                    <div>
+                    <lable for="tel" class="field-lable">Phone<lable>
+                    <input type="tel" class="input-field" id="tel" name="user-tel" required>
+                    <svg width="12" height="12" class="modal-icon">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    </div>
+                    <div>
+                    <lable for="email" class="field-lable">Email<lable>
+                    <input type="email" class="input-field" id="email" name="user-email" required>
+                    <svg width="12" height="12" class="modal-icon">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    </div>
+                    <lable for="comment" class="field-lable">Comment<lable>
+                    <textarea class="textarea" id="comment" placeholder="Text input"></textarea>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
