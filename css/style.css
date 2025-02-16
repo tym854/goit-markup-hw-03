@@ -611,5 +611,7 @@ footer .social-media-text {
 .modal-icon {
     fill: #2e2f42;
     position: absolute;
-    justify-content: center;
+    left: 19px;
+    top: 50%;
+    transform: translateY(-50%);
 }
