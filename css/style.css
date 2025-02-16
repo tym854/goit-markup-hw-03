@@ -525,6 +525,7 @@ footer .social-media-text {
     display: flex;
     gap: 24px;
     align-items: center;
+    margin-top: 16px;
 }
 
 .subscribe {
@@ -534,7 +535,6 @@ footer .social-media-text {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 16px;
 }
 
 .input-subscribe {
@@ -547,7 +547,7 @@ footer .social-media-text {
     background: transparent;
 }
 
-.icon-send-button {
+.subscribe-button {
     width: 160px;
     height: 40px;
     padding: 8px 24px;
@@ -558,6 +558,19 @@ footer .social-media-text {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
+    border-radius: 4px;
+    background: #4d5ae5;
+    border: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-send-button {
+    fill: #fff;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .input-subscribe::placeholder {
@@ -605,13 +618,17 @@ footer .social-media-text {
     width: 24px;
     height: 24px;
     border-radius: 100%;
-    fill: #e7e9fc;
+    background: #e7e9fc;
+    border-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 24px;
     margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
+}
+
+.modal-button-icon {
+    fill: #2e2f42;
 }
 
 .modal-heading {
@@ -737,7 +754,6 @@ footer .social-media-text {
     padding: 16px 32px;
     width: 169px;
     height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -749,6 +765,11 @@ footer .social-media-text {
     padding: 16px 32px;
     border: none;
     margin: 24px 0;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-button:hover, .send-button:focus {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .send-button-holder {
