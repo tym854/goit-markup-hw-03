@@ -207,9 +207,20 @@
                     <li class="medias"><a href="papa" class="papa"><svg width="24" height="24" class="media-icon"> <use href="./images/icons.svg#icon-ln"> </use> </svg></a></li>
                 </ul>
             </div>
+            <div class="subscribe-field">
+                <form>
+                    <lable for="email" class="subscribe">Subscribe<lable>
+                    <div class="send-hold">
+                        <input type="email" class="input-subscribe" id="email" name="user-email" placeholder="E-mail">
+                        <button class="send-button">Subscribe
+                            <svg width="24" height="20" class="icon-send-button"> <use href="./images/icons.svg#icon-send"> </use> </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay"> <!--is-open-->
         <div class="modal">
             <div class="modal-holder">
                 <button class="modal-button">
@@ -221,28 +232,37 @@
                 <form>
                     <lable for="user-name" class="field-lable">Name<lable>
                     <div class="modal-icon-placeholder">
-                    <input type="name" class="input-field" id="user-name" name="user-name" required>
-                    <svg width="12" height="12" class="modal-icon">
-                        <use href="./images/icons.svg#icon-user"></use>
-                    </svg>
+                        <input type="name" class="input-field" id="user-name" name="user-name" required>
+                        <svg width="12" height="12" class="modal-icon">
+                            <use href="./images/icons.svg#icon-user"></use>
+                        </svg>
                     </div>
-                    <div>
-                    <lable for="tel" class="field-lable">Phone<lable>
-                    <input type="tel" class="input-field" id="tel" name="user-tel" required>
-                    <svg width="12" height="12" class="modal-icon">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
+                    <div class="modal-icon-placeholder">
+                        <lable for="tel" class="field-lable">Phone<lable>
+                        <input type="tel" class="input-field" id="tel" name="user-tel" required>
+                        <svg width="12" height="12" class="modal-icon">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
                     </div>
-                    <div>
-                    <lable for="email" class="field-lable">Email<lable>
-                    <input type="email" class="input-field" id="email" name="user-email" required>
-                    <svg width="12" height="12" class="modal-icon">
-                        <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>
+                    <div class="modal-icon-placeholder">
+                        <lable for="email" class="field-lable">Email<lable>
+                        <input type="email" class="input-field" id="email" name="user-email" required>
+                        <svg width="12" height="12" class="modal-icon">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
                     </div>
                     <lable for="comment" class="field-lable">Comment<lable>
-                    <textarea class="textarea" id="comment" placeholder="Text input"></textarea>
+                    <textarea class="textarea" id="comment" name="user-comment" placeholder="Text input"></textarea>
+                    <input type="checkbox" id="privacy-policy" class="checkbox visually-hidden">  
+                    <lable name="privacy" for="privacy-policy" class="user-conditions" value="true">
+                        <span class="fake-checkbox">
+                            <svg class="checked" width="10" height="10">
+                                <use href="./images/icons.svg#icon-checked"></use>
+                            </svg>
+                        </span>I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy</a>
+                    </lable>
                 </form>
+                <div class="send-button-holder"><button class="send-button">Send</button></div>
             </div>
         </div>
     </div>
