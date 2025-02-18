@@ -803,8 +803,6 @@ footer .social-media-text {
     background-color: #4d5ae5;
     font-family: "Roboto", sans-serif;
     display: block;
-    align-items: center;
-    justify-content: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -814,7 +812,7 @@ footer .social-media-text {
     cursor: pointer;
     padding: 16px 32px;
     border: none;
-    margin: 24px 0;
+    margin: 24px auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
