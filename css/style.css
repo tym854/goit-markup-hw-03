@@ -641,7 +641,11 @@ footer .social-media-text {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover + .modal-button-icon, .modal-button:focus + .modal-button-icon {
+.modal-button:hover + .modal-button-icon {
+    fill: #ffffff;
+}
+
+.modal-button:focus + .modal-button-icon {
     fill: #ffffff;
 }
 
@@ -761,7 +765,7 @@ footer .social-media-text {
     fill: transparent;
 }
 
-.checkbox:checked + .user-conditions .fake-checkbox {
+.checkbox:checked + .user-conditions > .fake-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
