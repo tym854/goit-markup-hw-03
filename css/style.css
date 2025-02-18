@@ -545,10 +545,18 @@ footer .social-media-text {
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
 }
 
 .subscribe-button {
-    width: 160px;
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     height: 40px;
     padding: 8px 24px;
     font-family: "Roboto", sans-serif;
@@ -565,6 +573,7 @@ footer .social-media-text {
 }
 
 .icon-send-button {
+    margin-left: 16px;
     fill: #fff;
 }
 
@@ -578,7 +587,7 @@ footer .social-media-text {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .modal-overlay {
