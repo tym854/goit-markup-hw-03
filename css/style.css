@@ -774,7 +774,7 @@ footer .social-media-text {
 }
 
 .checkbox:checked + .user-conditions .checked {
-    fill: normal;
+    fill: #ffffff;
 }
 
 .user-conditions {
