@@ -773,7 +773,7 @@ footer .social-media-text {
     fill: #F4F4FD;
 }
 
-.checkbox:checked + .user-conditions .checked {
+.checkbox:checked + .user-conditions.checked {
     fill: #ffffff;
 }
 
